@@ -1,0 +1,20 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0ab095;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+    z-index: 9999;
+  }
+  
+  .top-bar.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
