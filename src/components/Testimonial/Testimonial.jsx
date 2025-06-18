@@ -33,6 +33,21 @@ function Testimonial() {
           <img src="/assets/testimonial.jpg" alt="testimonial" />
         </motion.div>
       </div>
+
+      <div className="testimonial-review">
+        <div className="review-container">
+          <h2>1.56L</h2>
+          <p>revenue generated in a day</p>
+        </div>
+        <div className="review-container">
+          <h2>40%</h2>
+          <p>customer queries handled by Boondi - the bot</p>
+        </div>
+        <div className="review-container">
+          <h2>4X</h2>
+          <p>increase in revenue since onboarding with Interakt</p>
+        </div>
+      </div>
     </section>
   );
 }
