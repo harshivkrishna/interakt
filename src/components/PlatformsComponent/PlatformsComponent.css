@@ -28,6 +28,8 @@
     object-fit: contain;
     justify-self: center;
     transition: transform 0.3s ease;
+    user-select: none;
+    pointer-events: none;
   }
   
   .platforms-logos img:hover {
