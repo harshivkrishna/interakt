@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./FeatureHighlights.css";
 import {
   Database,
@@ -49,21 +50,55 @@ function FeatureHighlights() {
     },
   ];
 
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2, // time between each card animation
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section className="feature-highlights-section">
-        <h2>More reasons to choose Interakt</h2>
-        <h4>Get a Green Tick verified WhatsApp Business API account along with:</h4>
-      <div className="feature-highlights-grid">
+      <h2>More reasons to choose Interakt</h2>
+      <h4>Get a Green Tick verified WhatsApp Business API account along with:</h4>
+
+      <motion.div
+        className="feature-highlights-grid"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {features.map((feature, index) => (
-          <div key={index} className="feature-highlights-card">
+          <motion.div
+            key={index}
+            className="feature-highlights-card"
+            variants={cardVariants}
+          >
             <div className="feature-icon">{feature.icon}</div>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      <a className="trial-button" href="#form">Start Free Trial</a>
+      <motion.a
+        className="trial-button"
+        href="#form"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: features.length * 0.2, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        Start Free Trial
+      </motion.a>
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./Hero.css";
 
 const words = [
@@ -42,7 +43,12 @@ function CustomTypewriter({ words, typeSpeed = 150, delay = 2000 }) {
 function Hero() {
   return (
     <main className="hero-section">
-      <div className="left-container">
+      <motion.div
+        className="left-container"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <img src="/assets/logo.png" className="logoImg" alt="logo" />
         <h1>
           Transform Conversations into Conversions with WhatsApp{" "}
@@ -55,10 +61,16 @@ function Hero() {
           your business on WhatsApp.
         </p>
         <a href="#form">Start Free Trial</a>
-      </div>
-      <div className="right-container">
+      </motion.div>
+
+      <motion.div
+        className="right-container"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <img src="/assets/headerImg.png" alt="header" />
-      </div>
+      </motion.div>
     </main>
   );
 }
