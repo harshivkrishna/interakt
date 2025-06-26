@@ -143,6 +143,10 @@
         .form-container{
             flex-direction: column;
         }
+
+        .form-left{
+          padding: 0px;
+        }
   }
 
 

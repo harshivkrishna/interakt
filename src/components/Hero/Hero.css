@@ -23,10 +23,6 @@
     height: 80px;
 }
 
-.metaImg{
-    height: 50px;
-}
-
 .left-container p{
     margin-top: 20px;
     font-size: 15px;
@@ -85,10 +81,11 @@
 
 @media (max-width:450px) {
     .left-container h1{
-        margin-top: 40px;
+        margin-top: 0px;
         font-size: 1.5rem;
     }
     .left-container p{
         font-size: 12px;
     }
+
 }
