@@ -39,11 +39,11 @@ function Testimonial() {
         </div>
         <div className="review-container">
           <h2>40%</h2>
-          <p>customer queries handled by Boondi - the bot</p>
+          <p>customer queries handled by Chirrp - the bot</p>
         </div>
         <div className="review-container">
           <h2>4X</h2>
-          <p>increase in revenue since onboarding with Interakt</p>
+          <p>increase in revenue since onboarding with Chirrp</p>
         </div>
       </div>
     </section>
