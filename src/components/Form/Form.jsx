@@ -23,7 +23,7 @@ function Form() {
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h2>Sign up with Email</h2>
+        <h2>Know More</h2>
         <form>
           <div className="name-fields">
             <input type="text" placeholder="First Name" required />
