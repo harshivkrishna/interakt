@@ -1,6 +1,7 @@
 .features-section {
     background-color: #d3f3ea;
     padding: 2rem 1rem;
+    overflow-x: hidden;
   }
   
   .features-grid {

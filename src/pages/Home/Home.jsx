@@ -14,7 +14,7 @@ function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight / 2 ) {
+      if (window.scrollY > 40) {
         setShowTopBar(true);
       } else {
         setShowTopBar(false);

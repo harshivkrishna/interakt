@@ -2,6 +2,7 @@
     padding: 3rem 1rem;
     background-color: #fdf9f3;
     text-align: center;
+    overflow-x: hidden;
   }
 
   .feature-highlights-section h2{

@@ -2,6 +2,7 @@
     background-color: #e6e6e6;
     padding: 2rem 1rem;
     text-align: center;
+    overflow-x: hidden;
   }
   
   .partner-heading {

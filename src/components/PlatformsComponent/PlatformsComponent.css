@@ -1,6 +1,7 @@
 .platforms-container {
     text-align: center;
     padding: 40px 20px;
+    overflow-x: hidden;
   }
   
   .platforms-heading {
