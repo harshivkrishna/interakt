@@ -1,74 +1,77 @@
 .platforms-container {
-    text-align: center;
-    padding: 40px 20px;
-    overflow-x: hidden;
-  }
-  
-  .platforms-heading {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: 700;
-  }
-  
+  text-align: center;
+  padding: 40px 20px;
+  overflow-x: hidden;
+  background-color: #fff;
+}
 
+.platforms-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.platforms-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.platforms-logos img {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  user-select: none;
+}
+
+.platforms-logos img:hover {
+  transform: scale(1.05);
+}
+
+.trial-button {
+  background-color: #00a78e;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trial-button:hover {
+  background-color: #008f7b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   .platforms-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 50px;
-    align-items: center;
+    gap: 20px;
   }
-  
+
   .platforms-logos img {
     width: 100px;
-    height: auto;
-    object-fit: contain;
-    justify-self: center;
-    transition: transform 0.3s ease;
-    user-select: none;
-    pointer-events: none;
+    height: 50px;
   }
-  
-  .platforms-logos img:hover {
-    transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .platforms-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  
-  .trial-button {
-    background-color: #00a78e;
-    color: #fff;
-    border: none;
-    padding: 14px 28px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
+
+  .platforms-logos img {
+    width: 90px;
+    height: 50px;
   }
-  
-  .trial-button:hover {
-    background-color: #008f7b;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .platforms-logos {
-      flex-wrap: wrap;
-      row-gap: 20px;
-    }
-  
-    .platforms-logos img {
-      width: 90px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .platforms-logos {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-  
-    .platforms-logos img {
-      width: 80px;
-    }
-  }
-  
+}

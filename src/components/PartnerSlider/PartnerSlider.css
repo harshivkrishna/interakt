@@ -89,4 +89,9 @@
       .slider{
         width: 90%;
       }
+
+      .slide-track{
+        width: calc(150px * 14);
+      }
+
   }
