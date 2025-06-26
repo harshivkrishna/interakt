@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import "./Hero.css";
 
 const words = [
-  { text: "CRM", color: "#0ab095" },
-  { text: "Marketing", color: "#f97316" },
-  { text: "Commerce", color: "#6366f1" },
+  { text: "Offers", color: "#0ab095" },
+  { text: "Discounts", color: "#f97316" },
+  { text: "& More", color: "#6366f1" },
 ];
 
 function CustomTypewriter({ words, typeSpeed = 150, delay = 2000 }) {
@@ -51,16 +51,14 @@ function Hero() {
       >
         <img src="/assets/logo.png" className="logoImg" alt="logo" />
         <h1>
-          Transform Conversations into Conversions with WhatsApp{" "}
+          Conversations that convert {" "}
           <CustomTypewriter words={words} />
         </h1>
-        <img src="/assets/meta.webp" className="metaImg" alt="meta" />
         <p>
-          Integrate effortlessly with the WhatsApp Business API. The only
-          full-stack platform to offer a seamless customer experience & grow
-          your business on WhatsApp.
+        <b>Get Handpicked Discounts on WhatsApp - Instantly!</b> From food and fashion to real estate and entertainment - we send you <b>curated offers straight to your WhatsApp</b>. No spam. Just pure savings.
+
         </p>
-        <a href="#form">Start Free Trial</a>
+        <a href="#form">Know More</a>
       </motion.div>
 
       <motion.div

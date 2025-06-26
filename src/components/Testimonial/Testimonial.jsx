@@ -14,13 +14,11 @@ function Testimonial() {
           viewport={{ once: true, amount: 0.2 }}
         >
           <p className="review">
-            We were able to increase our revenue from the first Diwali to the
-            second Diwali to approximately 4x of what we did and we couldn't
-            have done this without the help of Interakt.
+          We&apos;ve seen a massive jump in repeat orders and faster table reservations after integrating our WhatsApp workflows. From menu queries to real-time bookings, everything&apos;s more seamless — and that&apos;s been a game-changer for us.
             <img src="/assets/quote.png" className="quote" alt="quote" />
           </p>
-          <p className="owner">Yash Banage</p>
-          <p className="owner-descp">Co-founder, Bombay Sweet Shop</p>
+          <p className="owner">Aditya Vardhan</p>
+          <p className="owner-descp">Co-Founder, Triple Ivy Foods</p>
         </motion.div>
 
         <motion.div
@@ -30,7 +28,7 @@ function Testimonial() {
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <img src="/assets/testimonial.jpg" alt="testimonial" />
+          <img src="/assets/testimonial.png" alt="testimonial" />
         </motion.div>
       </div>
 

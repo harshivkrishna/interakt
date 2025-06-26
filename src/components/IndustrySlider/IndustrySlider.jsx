@@ -8,66 +8,68 @@ import "./IndustrySlider.css";
 
 const slides = [
   {
-    img: "/assets/industrySlider/slide1.webp",
-    title: "Marketing Agencies",
+    img: "/assets/industrySlider/restaurant.webp", // Food delivery / kitchen
+    title: "F&B Outlets & Cloud Kitchens",
     points: [
-      "Generate more leads and sales for your clients",
-      "Enable 24X7 customer support on WhatsApp",
-      "Send personalized notifications to drive purchase interest",
-    ],
-    bgColor: "#FFF4E5",
-  },
-  {
-    img: "/assets/industrySlider/slide2.webp",
-    title: "Automotive Industry",
-    points: [
-      "Promote your offering with WhatsApp broadcast",
-      "Support your customers 24×7 at scale",
-      "Showcase your products on WhatsApp storefront",
+      "Drive online orders with direct communication on daily specials or combos",
+      "Promote new menu launches, festive platters, or subscription offers",
+      "Collect ratings and reviews to boost online reputation and visibility",
     ],
     bgColor: "#E6F8F4",
   },
   {
-    img: "/assets/industrySlider/slide3.webp",
+    img: "/assets/industrySlider/slide2.webp", // Wellness yoga / therapy
+    title: "Health & Wellness",
+    points: [
+      "Engage clients with personalized wellness reminders and goal trackers",
+      "Drive bookings for consultations, therapy sessions, and workshops",
+      "Promote new programs, offers, and membership plans",
+    ],
+    bgColor: "#FFF4E5",
+  },
+  {
+    img: "/assets/industrySlider/real.webp", // Real estate exterior / modern house
     title: "Real Estate",
     points: [
-      "Schedule property visits & send automated reminders",
-      "Automate FAQs for fast-tracking property deals",
-      "Share property details catalog via PDF files",
-    ],
-    bgColor: "#FFF4E5",
-  },
-  {
-    img: "/assets/industrySlider/slide4.webp",
-    title: "Marketing Agencies",
-    points: [
-      "Generate more leads and sales for your clients",
-      "Enable 24X7 customer support on WhatsApp",
-      "Send personalized notifications to drive purchase interest",
-    ],
-    bgColor: "#FFF4E5",
-  },
-  {
-    img: "/assets/industrySlider/slide5.webp",
-    title: "Automotive Industry",
-    points: [
-      "Promote your offering with WhatsApp broadcast",
-      "Support your customers 24×7 at scale",
-      "Showcase your products on WhatsApp storefront",
+      "Automate lead qualification and assign sales reps based on buyer interest",
+      "Share curated property lists and availability updates in real time",
+      "Run campaigns for project launches, open houses, and investment highlights",
     ],
     bgColor: "#E6F8F4",
   },
   {
-    img: "/assets/industrySlider/slide6.webp",
-    title: "Real Estate",
+    img: "/assets/industrySlider/health.png", // Hospital scene
+    title: "Hospitals & Clinics",
     points: [
-      "Schedule property visits & send automated reminders",
-      "Automate FAQs for fast-tracking property deals",
-      "Share property details catalog via PDF files",
+      "Enable easy appointment booking and automated confirmations",
+      "Share health check-up packages and specialist availability",
+      "Follow up with patients post-treatment to improve care continuity",
+    ],
+    bgColor: "#FFF4E5",
+  },
+  
+  {
+    img: "/assets/industrySlider/fashion.webp", // Fashion clothing shop
+    title: "Fashion & Retail",
+    points: [
+      "Announce new collections, exclusive drops, and flash sales",
+      "Drive in-store or online conversions with limited-time promotions",
+      "Collect customer preferences to fuel future product recommendations",
+    ],
+    bgColor: "#E6F8F4",
+  },
+  {
+    img: "/assets/industrySlider/entertainment.png", // Event / concert / entertainment
+    title: "Event Companies & Entertainment",
+    points: [
+      "Promote upcoming shows, workshops, and ticketed events",
+      "Segment audiences for niche targeting across event categories",
+      "Build fan communities with exclusive content and behind-the-scenes access",
     ],
     bgColor: "#FFF4E5",
   },
 ];
+
 
 function IndustrySlider() {
   return (
@@ -90,7 +92,7 @@ function IndustrySlider() {
           <SwiperSlide key={index}>
             <div className="slide-card" style={{ backgroundColor: slide.bgColor }}>
               <img src={slide.img} alt={slide.title} className="slide-img" />
-              <h3>{slide.title}</h3>
+              <h3 className="slide-title">{slide.title}</h3>
               <ul>
                 {slide.points.map((point, i) => (
                   <li key={i}>{point}</li>

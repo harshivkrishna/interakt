@@ -28,7 +28,7 @@ function Home() {
   return (
     <>
       <div className={`top-bar ${showTopBar ? "visible" : ""}`}>
-        <p>Get Started @799/month [Annual plans only]</p>
+        <p>Get Started for Free! </p>
       </div>
       <Hero />
       <Features />

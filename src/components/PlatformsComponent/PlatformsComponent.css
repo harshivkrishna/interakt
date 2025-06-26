@@ -6,13 +6,10 @@
   .platforms-heading {
     font-size: 2rem;
     margin-bottom: 30px;
+    font-weight: 700;
   }
   
-  .platforms-heading .highlight {
-    color: #00a78e;
-    font-weight: bold;
-  }
-  
+
   .platforms-logos {
     display: flex;
     flex-wrap: wrap;

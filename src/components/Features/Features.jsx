@@ -13,27 +13,27 @@ function Features() {
   const features = [
     {
       icon: <BadgeCheck size={28} />,
-      title: "Get Green Tick Verified",
+      title: "Verified Green Tick Verified WhatsApp Business Profile",
     },
     {
       icon: <Smartphone size={28} />,
-      title: "One time & recurring Campaigns on WhatsApp",
+      title: "Broadcast Campaigns - Personalized & Targeted",
     },
     {
       icon: <Users size={28} />,
-      title: "Shared Team Inbox with auto chat assignment",
+      title: "Auto-Replies, Funnels & Chatbots",
     },
     {
       icon: <Settings size={28} />,
-      title: "Build your own Workflows",
+      title: "Campaign Analytics & Tracking",
     },
     {
       icon: <BarChart2 size={28} />,
-      title: "Campaign & Agent Analytics",
+      title: "CRM Integration",
     },
     {
       icon: <ShoppingBag size={28} />,
-      title: "Simplicity for SMBs with Enterprise grade Scale & Security",
+      title: "Build your own workflows",
     },
   ];
 

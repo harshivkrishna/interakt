@@ -2,51 +2,45 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./FeatureHighlights.css";
 import {
-  Database,
-  ArrowUpRight,
-  Link2,
-  Rocket,
-  BadgeDollarSign,
-  Headphones,
+  Wand2,
+  Briefcase,
+  Smartphone,
+  TrendingUp,
+  PlugZap,
+  BarChart3,
 } from "lucide-react";
 
 function FeatureHighlights() {
   const features = [
     {
-      icon: <Database size={32} color="#c58c00" />,
-      title: "Access to Meta's APIs",
-      description:
-        "Leverage direct Meta APIs and get access to the latest WhatsApp Business API features",
+      icon: <Wand2 size={32} color="#c58c00" />,
+      title: "Done-for-You Campaigns",
+      description: "We build it. You just watch the leads roll in.",
     },
     {
-      icon: <ArrowUpRight size={32} color="#c58c00" />,
-      title: "Scalable Infrastructure",
-      description:
-        "1000s of brands have partnered with us to scale up their customer support & engagement!",
+      icon: <Briefcase size={32} color="#c58c00" />,
+      title: "Industry Experts Across Verticals",
+      description: "From fashion to F&B – we speak your brand's language.",
     },
     {
-      icon: <Link2 size={32} color="#c58c00" />,
-      title: "Seamless Integrations",
-      description:
-        "OOTB integrations with your favorite CRMs, payment gateways, e-stores & marketing automation platforms",
+      icon: <Smartphone size={32} color="#c58c00" />,
+      title: "No App, No Clutter – Just Pure Conversions",
+      description: "Streamlined, smart, and straight to results.",
     },
     {
-      icon: <Rocket size={32} color="#c58c00" />,
-      title: "Smooth onboarding & easy setup",
-      description:
-        "Minimize operational disruption, and deploy a powerful WhatsApp solution for your business in a few simple steps!",
+      icon: <TrendingUp size={32} color="#c58c00" />,
+      title: "Scalable & Affordable for All Brand Sizes",
+      description: "Whether you're boutique or booming – we grow with you.",
     },
     {
-      icon: <BadgeDollarSign size={32} color="#c58c00" />,
-      title: "Highly competitive pricing",
-      description:
-        "No hidden costs — transparent pricing structure with no lock-ins. We show you campaign costs upfront so that there are no surprises later.",
+      icon: <PlugZap size={32} color="#c58c00" />,
+      title: "Plug & Play Onboarding",
+      description: "Get started in minutes — no tech headaches, no waiting.",
     },
     {
-      icon: <Headphones size={32} color="#c58c00" />,
-      title: "Industry Leading Support",
-      description:
-        "Access our premium customer support and get a resolution within minutes!",
+      icon: <BarChart3 size={32} color="#c58c00" />,
+      title: "Real-Time Insights & Reporting",
+      description: "Know what’s working, when — and double down with data.",
     },
   ];
 
@@ -54,7 +48,7 @@ function FeatureHighlights() {
     hidden: {},
     show: {
       transition: {
-        staggerChildren: 0.2, // time between each card animation
+        staggerChildren: 0.2,
       },
     },
   };
@@ -66,8 +60,8 @@ function FeatureHighlights() {
 
   return (
     <section className="feature-highlights-section">
-      <h2>More reasons to choose Interakt</h2>
-      <h4>Get a Green Tick verified WhatsApp Business API account along with:</h4>
+      <h2>WHY CHOOSE CHIRRP!</h2>
+      <h4>We make customer engagement effortless, impactful, and scalable</h4>
 
       <motion.div
         className="feature-highlights-grid"
@@ -94,7 +88,11 @@ function FeatureHighlights() {
         href="#form"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: features.length * 0.2, ease: "easeOut" }}
+        transition={{
+          duration: 0.8,
+          delay: features.length * 0.2,
+          ease: "easeOut",
+        }}
         viewport={{ once: true, amount: 0.2 }}
       >
         Start Free Trial
